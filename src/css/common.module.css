@@ -2,7 +2,6 @@
 
 .side {
     display: flex;
-    
     justify-content: center;
     align-content: center;
     width: 30vw;
@@ -29,6 +28,7 @@
 .sideContent {
     display: flex;
     padding: 10px;
+    flex-flow: column wrap;
     justify-content: center;
     align-content: center;
     width: 30vw;
@@ -38,11 +38,22 @@
     
 }
 
+.sideCont {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    flex-flow: column wrap;
+    color: var(--third);
+    width: 25vw;
+    height: 90vh;
+    
+}
+
 .minis {
     width: var(--minis);
     height: var(--minis);
     border-radius: 10px;
-    border: 1px solid var(--sec);
+    /*border: 1px solid var(--sec);*/
     margin: 1vh;
     padding: 5px;
     display: flex;
@@ -52,6 +63,8 @@
     overflow: hidden;
     transition-duration: 0.3s;
     cursor: pointer;
+    box-shadow: 1px 1px 2px var(--main);
+    background-color: var(--light);
 }
 
 .minis:hover {

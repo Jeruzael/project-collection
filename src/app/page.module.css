@@ -6,6 +6,7 @@
   align-items: start;
   /*padding: 6rem;*/
   min-height: 100vh;
+  background-color: var(--third);
 }
 
 .description {

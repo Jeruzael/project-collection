@@ -4,12 +4,23 @@ import React from 'react'
 import { useState } from 'react'
 import Image from 'next/image'
 
+const SideCont = ({children}) => {
+    return(
+        <>
+            <div className={style.sideCont}>
+                {children}
+            </div>
+        </>
+    )
+}
 export function Side({children}){
     return(
         <>
             <div className={style.side}>            
                 <FixedContent>
-                    {children}
+                    <SideCont>
+                        {children}
+                    </SideCont>
                 </FixedContent>
             </div>    
         </>
