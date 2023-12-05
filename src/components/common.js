@@ -3,6 +3,7 @@ import style from '../css/common.module.css'
 import React from 'react'
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const SideCont = ({children}) => {
     return(
@@ -47,7 +48,7 @@ export function FixedContent({children}){
     )
 }
 
-export const Minis = ({children, src, width, height, alt}) => {
+export const Minis = ({children, src, width, height, alt, href}) => {
     return (
         <>
             <div className={style.minis}>
@@ -59,7 +60,7 @@ export const Minis = ({children, src, width, height, alt}) => {
                         height={height}
                         alt={alt}
                     />
-                    <h3 className={style.ministxt}>{children}</h3>                                                                      
+                    <Link className={style.ministxt} href={href}>{children}</Link>                                                                      
                 </div>                           
             </div>
         </>

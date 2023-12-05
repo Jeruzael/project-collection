@@ -117,11 +117,15 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #9696b2;
   border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--light);
 }
 

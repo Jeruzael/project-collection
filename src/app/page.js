@@ -5,6 +5,7 @@ import styles from './page.module.css'
 import { useState } from 'react'
 import { Side, Body, Minis, TestBtn } from '../components/common'
 import { projectImages, projects } from '@/data/data'
+import Link from 'next/link'
 
 
 export default function Home() {  
@@ -14,6 +15,7 @@ export default function Home() {
     alt="project"
     width={300}
     height={300}
+    href={`/${item}`}
   >{item}</Minis>)
   return (
     <main className={styles.main}>
@@ -36,7 +38,7 @@ export default function Home() {
         </p>
       </Side>
       <Body>
-        {project}
+        {project}        
         <TestBtn testF={()=>{onTest([
           ...test,
           'testing'
@@ -45,3 +47,4 @@ export default function Home() {
     </main>
   )
 }
+
