@@ -1,0 +1,130 @@
+
+
+.side {
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+    width: 30vw;
+    height: 100vh;
+    position: relative;
+    
+}
+
+.body {
+    display: flex;
+    justify-content: center;    
+    flex-flow: row wrap;
+    flex-shrink: 3;
+    width: 70vw;
+    height: auto;
+    /*border: 1px solid var(--main);*/
+    border-radius: 10px;
+    position: relative;
+    margin: 5px;
+    padding: 10px;
+    
+}
+
+.sideContent {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+    width: 30vw;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--sec);
+    
+}
+
+.minis {
+    width: var(--minis);
+    height: var(--minis);
+    border-radius: 10px;
+    border: 1px solid var(--sec);
+    margin: 1vh;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.minis:hover {
+    /*width: var(--minis-L);
+    height: var(--minis-L);*/
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.minisimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;    
+    width: var(--minisimg);
+    height: var(--minisimg);
+    border-radius: 11px;    
+    overflow: hidden;
+    background-color: var(--light);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.minisimg:hover {
+    width: var(--minisimg-l);
+    height: var(--minisimg-l);
+}
+
+.minisimgitem {    
+    position: relative;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.minisimgitem:hover {
+    
+    width: var(--minisimg-l);
+    height: var(--minisimg-l);
+    
+}
+
+.ministxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;        
+    position: absolute;
+    color: var(--light);    
+    position: absolute;
+    /*border: 1px solid var(--main);*/
+    width: inherit;
+    height: inherit;
+    transition: 0.2s;
+}
+
+.ministxt:hover {
+    cursor: pointer;
+    transform: scale(1.1); 
+}
+
+.testBtn button{
+    color: var(--light);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--main);
+    border: 1px solid var(--light);
+    transition-duration: 0.2s;
+    position: fixed;
+    top: 90vh;
+    right: 2vw;
+}
+
+.testBtn button:active {
+    background-color: var(--sec);
+}
