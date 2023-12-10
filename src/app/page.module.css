@@ -1,7 +1,8 @@
 
 .main {
   display: flex;
-  flex-direction: row;
+  flex-flow: row;
+  flex-shrink: 2;
   justify-content: start;
   align-items: start;
   /*padding: 6rem;*/

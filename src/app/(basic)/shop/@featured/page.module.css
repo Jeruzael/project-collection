@@ -1,0 +1,6 @@
+.featured {
+    width: 20vw;
+    height: 80vh;
+    border: 1px solid var(--sec);    
+}
+

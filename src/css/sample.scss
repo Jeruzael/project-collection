@@ -1,0 +1,137 @@
+
+
+@mixin max-min(
+    $max-h: 1000px,
+    $max-w:  1000px,
+    $min-h: 30px,
+    $min-w: 300px,
+){
+    max-width: $max-w;
+    max-height: $max-h;
+    min-width: $min-w;
+    min-height: $min-h;
+}
+
+@mixin rez-size($w: 100vw, $h: 100vh){
+    width: $w;
+    height: $h;
+    border: 1px solid red;  
+}
+
+@mixin res-start-start($or: row){
+    position: relative;
+    display: flex;
+    flex-flow: $or wrap;
+    justify-content: start;
+    align-items: start;
+}
+
+@mixin res-start-center($or: row){
+    position: relative;
+    display: flex;
+    flex-flow: $or wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+@mixin res-center($or: row){
+    display: flex;
+    flex-flow: $or wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin res-center-start($or: row){
+    position: relative;
+    display: flex;
+    flex-flow: $or wrap;
+    justify-content: center;
+    align-items: start;
+}
+
+@mixin res-evenly($or: row){    
+    position: relative;
+    display: flex;
+    flex-flow: $or wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@mixin res-around($or: row){    
+    position: relative;
+    display: flex;
+    flex-flow: $or wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin res-between($or: row){    
+    position: relative;
+    display: flex;
+    flex-flow: $or wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin res-between-start($or: row){    
+    position: relative;
+    display: flex;
+    flex-flow: $or wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+@mixin res-end-center($or: row){    
+    position: relative;
+    display: flex;
+    flex-flow: $or wrap;
+    justify-content: end;
+    align-items: center;
+}
+
+
+/*   Container    */
+.container {
+    @include rez-size;
+    @include max-min(3000px, 2500px, 1500px, 0px);
+    @include res-start-start($or: row);
+}
+
+
+/*   Header    */
+.header {
+    position: fixed;
+    @include rez-size($h: 8vh );
+    @include res-center;
+    @include max-min(200px, 2500px, 50px, 0px);    
+    .header__container {
+        @include rez-size($w: 96vw, $h: 7vh );
+        @include res-between;  
+        @include max-min(200px, 2500px, 50px, 0px);
+        .header__logo {            
+            @include rez-size($w: 20vw, $h: 5vh);
+            @include res-start-center;
+        }
+
+        .header__navs {
+            @include max-min(200px, 2500px, 50px, 200px);
+            @include rez-size($w: 20vw, $h:5vh);
+            @include res-between;
+        }
+    }
+}
+
+
+/*   Hero Image    */
+.hero_image {
+    @include rez-size($h: 40vh);
+    @include max-min(500px, 2500px, 100px, 0px);
+}
+
+/*   Hero Image    */
+.body {
+    padding: 5px;
+    @include rez-size($h: auto);
+    @include max-min(3000px, 2500px, 1000px, 300px);
+    @include res-end-center($or: column);
+}

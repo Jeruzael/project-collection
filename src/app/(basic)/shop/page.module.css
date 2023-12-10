@@ -1,0 +1,91 @@
+.shopLayout {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--third);
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-shrink: 3;
+}
+
+.shopHeaderLayout {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100vw;
+    height: 5vh;
+    background-color: var(--main);   
+    color: var(--third);     
+    position: fixed;
+}
+
+.shopHeaderNavLayout {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;    
+    width: 30vw;
+    padding: 5px;
+}
+
+.shopBanner {
+    width: 100vw;
+    height: 30vh;
+    border: 1px solid var(--main);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    width: 98vw;
+    height: auto;    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: start;
+    padding: 15px;
+}
+
+.content {
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: start;
+    
+}
+
+.footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 30vh;
+    background-color: var(--main);
+    color: var(--sec);
+}
+
+.ads {
+    width: 13vw;
+    height: 80vh;
+    border:1px solid var(--main);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--main);
+    border-radius: 5px;
+}

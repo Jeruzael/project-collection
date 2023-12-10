@@ -1,0 +1,99 @@
+/*   Container    */
+.container {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid red;
+  max-width: 2500px;
+  max-height: 3000px;
+  min-width: 0px;
+  min-height: 1500px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: start;
+}
+
+/*   Header    */
+.header {
+  position: fixed;
+  width: 100vw;
+  height: 8vh;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 2500px;
+  max-height: 200px;
+  min-width: 0px;
+  min-height: 50px;
+}
+.header .header__container {
+  width: 96vw;
+  height: 7vh;
+  border: 1px solid red;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 2500px;
+  max-height: 200px;
+  min-width: 0px;
+  min-height: 50px;
+}
+.header .header__container .header__logo {
+  width: 20vw;
+  height: 5vh;
+  border: 1px solid red;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: center;
+}
+.header .header__container .header__navs {
+  max-width: 2500px;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 50px;
+  width: 20vw;
+  height: 5vh;
+  border: 1px solid red;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*   Hero Image    */
+.hero_image {
+  width: 100vw;
+  height: 40vh;
+  border: 1px solid red;
+  max-width: 2500px;
+  max-height: 500px;
+  min-width: 0px;
+  min-height: 100px;
+}
+
+/*   Hero Image    */
+.body {
+  padding: 5px;
+  width: 100vw;
+  height: auto;
+  border: 1px solid red;
+  max-width: 2500px;
+  max-height: 3000px;
+  min-width: 300px;
+  min-height: 1000px;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: end;
+  align-items: center;
+}
+
+/*# sourceMappingURL=sample.module.css.map */

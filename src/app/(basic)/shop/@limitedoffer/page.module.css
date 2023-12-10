@@ -1,0 +1,11 @@
+.limitedOffer {
+    width: 49vw;
+    height: 50vh;
+    border: 1px solid var(--main);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: start;    
+    padding: 10px;
+    border-radius: 5px;
+}

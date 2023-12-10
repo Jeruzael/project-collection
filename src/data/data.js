@@ -1,4 +1,4 @@
-export const projects = ['todo', 'shop', 'catchall', 'Chess', 'Chatbot', 'AI', 'Image generator', 'Voice AI', 'Social app', 'Appointment setter', 'Anti-hacker', 'Tracker', 'Games', 'Shop', 'gallery', 'Animations', 'Virtual Reality', 'Augmented Reality']
+export const projects = ['todo', 'shop', 'catchall', 'locofy', 'custom', 'AI', 'Image generator', 'Voice AI', 'Social app', 'Appointment setter', 'Anti-hacker', 'Tracker', 'Games', 'Shop', 'gallery', 'Animations', 'Virtual Reality', 'Augmented Reality']
 
 export const projectImages = [
     '/images/18.jpeg',
