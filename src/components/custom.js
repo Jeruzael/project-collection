@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import style from '../css/sample.module.css'
 import Image from 'next/image'
 
@@ -18,7 +19,7 @@ export const ResponsiveHeader = ({children, logo}) => {
                 <div className={style.header}>
                     <div className={style.header__container}>
                         <div className={style.header__logo}>
-                            {logo}
+                            <Link href={'/custom'}>{logo}</Link>
                         </div>
                         <div className={style.header__navs}>
                             {children}
@@ -50,6 +51,28 @@ export const ResponsiveBody = ({children}) => {
         <>
             <div className={style.body}>
                  {children}
+            </div>
+        </>
+    )
+}
+
+export const ResponsiveFooter = ({children}) => {
+    return (
+        <>
+            <div className={style.footer}>
+                {children}
+            </div>
+        </>
+    )
+}
+
+export const Button = ({children, onHit}) => {
+    return (
+        <>
+            <div className={style.button}>
+                <button onClick={onHit}>
+                    {children}
+                </button>
             </div>
         </>
     )

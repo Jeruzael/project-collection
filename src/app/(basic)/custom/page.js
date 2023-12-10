@@ -1,24 +1,23 @@
+'use client'
 import {
     ResponsiveContainer, 
     ResponsiveHeader, 
     ResponsiveHero,
     ResponsiveBody,
+    ResponsiveFooter,
+    Button
 } from '@/components/custom'
 import Link from 'next/link'
 
 export default function Custom(){
     return(
         <>
-            <ResponsiveContainer>
-                <ResponsiveHeader logo={'LOGO'}>
-                    <Link href={"/"}>About</Link>
-                    <Link href={"/"}>Sign in</Link>
-                    <Link href={"/"}>Sign up</Link>
-                </ResponsiveHeader>
-                <ResponsiveBody>
-                    <h1>test</h1>
-                </ResponsiveBody>
-            </ResponsiveContainer>
+            <h1>Custom</h1>
+            <Button onHit={sample}>Test</Button>
         </>
     )
+}
+
+const sample = () => {
+    console.log('test');
 }

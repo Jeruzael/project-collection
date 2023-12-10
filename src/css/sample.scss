@@ -92,22 +92,22 @@
 
 /*   Container    */
 .container {
-    @include rez-size;
-    @include max-min(3000px, 2500px, 1500px, 0px);
-    @include res-start-start($or: row);
+    @include rez-size($h: auto);
+    @include max-min(3000px, 2500px, 100vh, 0px);
+    @include res-start-start($or: column);
 }
 
 
 /*   Header    */
 .header {
     position: fixed;
-    @include rez-size($h: 8vh );
+    @include rez-size($h: 10vh );
     @include res-center;
     @include max-min(200px, 2500px, 50px, 0px);    
     .header__container {
-        @include rez-size($w: 96vw, $h: 7vh );
+        @include rez-size($w: 97vw, $h: 9vh );
         @include res-between;  
-        @include max-min(200px, 2500px, 50px, 0px);
+        @include max-min(200px, 2500px, 50px, 274px);
         .header__logo {            
             @include rez-size($w: 20vw, $h: 5vh);
             @include res-start-center;
@@ -116,7 +116,7 @@
         .header__navs {
             @include max-min(200px, 2500px, 50px, 200px);
             @include rez-size($w: 20vw, $h:5vh);
-            @include res-between;
+            @include res-evenly;
         }
     }
 }
@@ -128,10 +128,37 @@
     @include max-min(500px, 2500px, 100px, 0px);
 }
 
-/*   Hero Image    */
+/*   body    */
 .body {
     padding: 5px;
+    margin-top: 10vh;
     @include rez-size($h: auto);
-    @include max-min(3000px, 2500px, 1000px, 300px);
-    @include res-end-center($or: column);
+    @include max-min(3000px, 2500px, 92vh, 300px);
+    @include res-center($or: column);
 }
+
+/*   Footer    */
+.footer {
+    @include rez-size($h: 20vh);
+    @include max-min(200px, 2500px, 0px, 0px);
+    @include res-center;
+}
+
+/*   Input controls   */
+.button {
+    @include rez-size($w: 110px, $h: 35px);
+    @include res-center;
+    button {        
+        padding: 5px;
+        width: 100px;
+        border-radius: 8px;
+    }
+    
+}
+
+/*   Navigational Components   */
+
+/*   Informational Components   */
+
+/*   Containers   */
+
